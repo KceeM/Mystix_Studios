@@ -1,94 +1,102 @@
-#content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px; /* Space between the video and mission content */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-#video-container {
-    flex: 1;
-    max-width: 60%; /* Adjust the width of the video container */
-}
-
-#video-container video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Optional: rounded corners for the video */
-}
-
-#mission-section {
-    flex: 1;
-    max-width: 40%; /* Adjust the width of the mission section */
-    text-align: left; /* Align text to the left */
-    padding: 20px;
-    background-color: white; /* Optional: background color */
-    border-radius: 10px; /* Optional: rounded corners for the section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for effect */
-}
-
-@media (max-width: 768px) {
-    #content-wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #video-container,
-    #mission-section {
-        max-width: 100%;
-    }
-}
-
-#specialities {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f5f5f5; /* Light background */
-}
-
-.speciality-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between items */
-}
-
-.speciality-item {
+header {
     position: relative;
-    width: 200px; /* Adjust as needed */
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    height: 500px; /* Adjust the height based on how much space you want */
+    overflow: hidden;
+    color: white; /* Ensure text stands out on the video background */
 }
 
-.speciality-item img {
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind the content */
 }
 
-.speciality-item button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    border: none;
-    background-color: #6a5acd; /* Soft purple */
-    color: white;
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 150px; /* Adjust based on your preferred content position */
+}
+
+.logo {
+    width: 350px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make sure the image behaves as a block element */
+    margin: 20px auto;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
     font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif; /* Change font if desired */
+    background-color: #e6e6fa; /* Lavender color */
+    border-radius: 12px; /* Semi-curved corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-.speciality-item:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+nav ul li a:hover {
+    background-color: #d3d3f2; /* Slightly darker lavender for hover effect */
+    color: #333; /* Change text color on hover */
 }
 
-.speciality-item img:hover {
-    transform: scale(1.1); /* Zoom effect */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+nav ul li a.active {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    border-radius: 12px; /* Match existing styling */
 }
 
-.speciality-item button:hover {
-    background-color: #483d8b; /* Darker shade on hover */
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
