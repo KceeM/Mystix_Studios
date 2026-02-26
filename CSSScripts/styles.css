@@ -65,7 +65,34 @@ nav button:hover {
     background-color: #d3d3f2;
     color: #333;
     transform: translateY(-2px);
+    box-shadow:
+        0 0 10px rgba(180, 140, 255, 0.8),
+        0 0 25px rgba(140, 100, 255, 0.7),
+        0 0 45px rgba(100, 200, 255, 0.6);
+
+    transform: translateY(-2px);
 }
+
+nav button {
+    position: relative;
+}
+
+nav button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow:
+        0 0 20px rgba(180, 140, 255, 0.9),
+        0 0 40px rgba(120, 200, 255, 0.8);
+}
+
+nav button:hover::after {
+    opacity: 1;
+}
+
 
 nav button.active {
     background-color: #333;
