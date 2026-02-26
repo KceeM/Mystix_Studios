@@ -1,3 +1,9 @@
+section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    color: #00D2FF;
+}
+
 #content-wrapper {
     display: flex;
     align-items: center;
@@ -99,7 +105,7 @@
 #welcome-section {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(107, 127, 254, 0.9), rgba(157, 102, 233, 0.9));
+    background: linear-gradient(135deg, #0A0A1F, #1B1B3A);
     color: white;
     font-family: 'Poppins', sans-serif;
     border-radius: 12px;
@@ -120,9 +126,10 @@
 }
 
 #welcome-section p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
     line-height: 1.6;
+    color: #C8D8F5;
     max-width: 700px;
     margin: 0 auto;
     opacity: 0;
@@ -143,6 +150,14 @@
 @keyframes fadeInText {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+    0%, 100% { text-shadow: 0 0 6px #00FFF3; }
+    50% { text-shadow: 0 0 20px #00FFF3; }
+}
+h1, h2, h3 {
+    animation: glowPulse 3s ease-in-out infinite;
 }
 
 /*end of page CTA section */
