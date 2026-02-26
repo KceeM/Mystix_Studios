@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
 function setupNavigationButtons() {
     const buttons = [
         { id: 'homeBtn', url: 'index.html' },
-        { id: 'servicesBtn', url: 'Services.html' },
-        { id: 'portfolioBtn', url: 'Portfolio.html' },
-        { id: 'cotactBtn', url: 'Contact.html' },
+        { id: 'servicesBtn', url: 'services.html' },
+        { id: 'portfolioBtn', url: 'portfolio.html' },
+        { id: 'cotactBtn', url: 'contact.html' },
         
     ];
     
