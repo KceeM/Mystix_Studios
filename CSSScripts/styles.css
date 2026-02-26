@@ -55,10 +55,12 @@ nav button {
     font-family: 'Inter', sans-serif;
     cursor: pointer;
 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
     background-color: #4A28CB; /* deep tech purple */
     color: #E3E9F5; /* frost white */
-    border: 2px solid transparent;
-    border-radius: 12px;
+    border-radius: 6px;
 
     transition: 
         background-color 0.3s ease,
@@ -82,7 +84,7 @@ nav button::after {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 12px;
+    border-radius: 6px;
     opacity: 0;
     transition: opacity 0.3s ease;
     box-shadow:
