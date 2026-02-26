@@ -29,5 +29,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function redirectToService(category) {
     // Redirect to the services page with the specified category section
-    window.location.href = 'services.html#' + category;
+    window.location.href = 'Services.html#' + category;
 }
