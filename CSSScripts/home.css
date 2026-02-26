@@ -68,9 +68,10 @@ section h2 {
 .speciality-item img {
     width: 100%;
     height: auto;
-    border-radius: 6px; /* Rounded corners */
+    border-radius: 6px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    filter: saturate(1.2) contrast(1.1) brightness(1.05);
 }
 
 .speciality-item button {
@@ -123,7 +124,8 @@ section h2 {
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.8);
+    color: #00FFFF;
     letter-spacing: 1px;
     animation: slideIn 1s ease-in-out;
 }
@@ -156,8 +158,8 @@ section h2 {
 }
 
 @keyframes glowPulse {
-    0%, 100% { text-shadow: 0 0 6px #00FFF3; }
-    50% { text-shadow: 0 0 20px #00FFF3; }
+    0%, 100% { text-shadow: 0 0 8px #00D2FF; }
+    50% { text-shadow: 0 0 20px #00D2FF; }
 }
 
 
@@ -241,12 +243,14 @@ section h2 {
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
-    background: #f5d300;
+    background: #00D2FF;
+    box-shadow: 0 0 20px rgba(0, 210, 255, .6);
+    border-top: 2px solid #00FFF3;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 #cta-section .cta-button:hover {
