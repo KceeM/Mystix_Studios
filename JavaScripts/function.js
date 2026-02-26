@@ -11,7 +11,7 @@ function setupNavigationButtons() {
         { id: 'homeBtn', url: 'index.html' },
         { id: 'servicesBtn', url: 'services.html' },
         { id: 'portfolioBtn', url: 'portfolio.html' },
-        { id: 'cotactBtn', url: 'contact.html' },
+        { id: 'contactBtn', url: 'contact.html' },
         
     ];
     
