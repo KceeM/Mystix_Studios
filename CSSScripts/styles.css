@@ -39,40 +39,37 @@ nav {
     position: relative;
     z-index: 1;
     text-align: center;
+    margin-top: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #000000;
+nav button {
+    padding: 10px 22px;
+    margin: 0 8px;
     font-size: 16px;
-    font-family: 'Arial', sans-serif; /* Change font if desired */
-    background-color: #e6e6fa; /* Lavender color */
-    border-radius: 12px; /* Semi-curved corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+
+    background-color: #e6e6fa; /* lavender */
+    color: #000;
+
+    border: none;
+    border-radius: 12px;
+
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
 }
 
-nav ul li a:hover {
-    background-color: #d3d3f2; /* Slightly darker lavender for hover effect */
-    color: #333; /* Change text color on hover */
+nav button:hover {
+    background-color: #d3d3f2;
+    color: #333;
+    transform: translateY(-2px);
 }
 
-nav ul li a.active {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    border-radius: 12px; /* Match existing styling */
+nav button.active {
+    background-color: #333;
+    color: #fff;
 }
 
 h1 {

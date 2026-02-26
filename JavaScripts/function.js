@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() { 
 
     setupNavigationButtons();
+    highlightActiveButton();
 
 
 });
@@ -23,4 +24,20 @@ function setupNavigationButtons() {
             });
         }
     });
+}
+
+function highlightActiveButton() {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    const pageMap = {
+        "index.html": "homeBtn",
+        "services.html": "servicesBtn",
+        "portfolio.html": "portfolioBtn",
+        "contact.html": "contactBtn"
+    };
+
+    const activeBtnId = pageMap[currentPage];
+    if (activeBtnId) {
+        document.getElementById(activeBtnId)?.classList.add("active");
+    }
 }
