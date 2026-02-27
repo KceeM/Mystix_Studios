@@ -21,7 +21,6 @@ function setupNavigationButtons() {
         if (btnElement) {
             btnElement.addEventListener('click', function() {
                 window.location.href = button.url;
-                window.location.href = 'services.html#service-animation';
             });
         }
     });
