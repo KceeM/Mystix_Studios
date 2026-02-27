@@ -1,0 +1,97 @@
+/* SERVICES HERO */
+#services-hero {
+    text-align: center;
+    padding: 80px 25px;
+    background: linear-gradient(135deg, #0A0A1F, #1B1B3A);
+    color: #E3E9F5;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#services-hero h1 {
+    font-size: 3rem;
+    color: #00D2FF;
+    text-shadow: 0 0 8px rgba(0, 210, 255, 0.6);
+}
+
+#services-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #C8D8F5;
+}
+
+/* INDIVIDUAL SERVICE BLOCKS */
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 25px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #0f0f24;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-4px);
+}
+
+.service-text {
+    flex: 1;
+    color: #E3E9F5;
+    font-family: 'Inter', sans-serif;
+}
+
+.service-text h2 {
+    font-size: 2rem;
+    color: #00D2FF;
+    margin-bottom: 12px;
+}
+
+.service-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #C8D8F5;
+}
+
+/* MEDIA SIDE */
+.service-media {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.service-media video,
+.service-media img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Alternating layout for larger screens */
+#service-animation .service-media,
+#service-graphic-design .service-media {
+    order: -1;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-media {
+        max-width: 80%;
+    }
+}
