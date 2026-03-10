@@ -41,3 +41,10 @@ function highlightActiveButton() {
         document.getElementById(activeBtnId)?.classList.add("active");
     }
 }
+
+document.querySelectorAll(".media-thumbs img").forEach(thumb => {
+    thumb.addEventListener("click", function() {
+        const mainImage = this.closest(".service-media").querySelector(".media-main img");
+        mainImage.src = this.src;
+    });
+});
