@@ -94,6 +94,18 @@
     gap: 12px;
 }
 
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* This flips the layout */
+.service.reverse {
+    flex-direction: row-reverse;
+}
+
 /* Main big image */
 .media-main img {
     width: 100%;
