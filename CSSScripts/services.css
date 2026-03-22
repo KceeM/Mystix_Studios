@@ -101,15 +101,12 @@
     gap: 30px;
 }
 
-/* This flips the layout */
-.service.reverse {
-    flex-direction: row-reverse;
-}
+
 
 /* Main big image */
 .media-main img {
     width: 100%;
-    height: 260px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease;

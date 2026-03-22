@@ -1,0 +1,69 @@
+#portfolio-filters {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#portfolio-filters button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #0f0f24;
+    color: #00D2FF;
+    border: 1px solid #00D2FF;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#portfolio-filters button:hover {
+    background: #00D2FF;
+    color: #000;
+}
+
+/* GRID */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.08);
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item::after {
+    content: "View Project";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 210, 255, 0.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.portfolio-item:hover::after {
+    opacity: 1;
+}

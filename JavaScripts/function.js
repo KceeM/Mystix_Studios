@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setupNavigationButtons();
     highlightActiveButton();
+    filterSelection();
 
 
 });
@@ -48,3 +49,15 @@ document.querySelectorAll(".media-thumbs img").forEach(thumb => {
         mainImage.src = this.src;
     });
 });
+
+function filterSelection(category) {
+    let items = document.querySelectorAll('.portfolio-item');
+
+    items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
