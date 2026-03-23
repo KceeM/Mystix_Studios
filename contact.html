@@ -7,6 +7,7 @@
     <meta name="keywords" content="Mystix, Mystix Stuidios, Animation, Game Design, Web Development, Artist, Website, Website creation, Web developers, web designer, web design, game developer, game design, animator, cartoon artist, digital artists, vfx artists, motion graphics, motion graphic artists, illustrators, graphic designers, programmers, programming, coders, coding professional">
     <title>MystixStudios</title>
     <link rel="stylesheet" href="CSSScripts/styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="CSSScripts/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -29,13 +30,99 @@
     </header>
 
     <main>
-        <section>
-            <h2>Main Section</h2>
-            <p>At Mystix Studios, we are passionate digital artists and creators, dedicated to bringing your ideas to life in the digital realm…
+        <section id="contact-section">
 
-                With a diverse team of talented professionals, we specialize in a wide range of creative and technical services</p>
+          <h1>Start Your Project</h1>
+          <p>Tell us about your vision and we’ll bring it to life.</p>
+
+           <form id="contact-form">
+              <!-- Name -->
+              <input type="text" name="name" placeholder="Full Name" required>
+
+              <!-- Email -->
+              <input type="email" name="email" placeholder="Email Address" required>
+
+              <!-- Project Type -->
+              <label for="project-type">Select Project Type</label>
+              <select name="project-type" id="project-type" required>
+                  <option value="">-- Select a Service --</option>
+                  <option>Social Media Content</option>
+                  <option>Brand Marketing Visuals</option>
+                  <option>Film / Cinematography</option>
+                  <option>3D Modeling</option>
+                  <option>Website (Full Development)</option>
+                  <option>UI/UX Design</option>
+                  <option>App (Full Development)</option>
+                  <option>Game (Full Development)</option>
+                  <option>PC/Console Game Development</option>
+                  <option>Mobile Game Development</option>
+                  <option>2D Animation</option>
+                  <option>3D Animation</option>
+                  <option>2D Art Assets</option>
+                  <option>3D Art Assets</option>
+                  <option>Photo Manipulation</option>
+                  <option>Logo Design</option>
+                  <option>Product Label Design</option>
+                  <option>Realistic Animation</option>
+                  <option>VFX</option>
+                  <option>Video Editing</option>
+                  <option>Photography Editing</option>
+                  <option>Graphic Design</option>
+                  <option>Traditional Art (Paintings)</option>
+               </select>
+
+               <!-- Project Description -->
+               <textarea name="description" placeholder="Describe your project in detail (concept, goals, references, expectations)" required></textarea>
+
+               <!-- Deadline -->
+               <label>Preferred Deadline</label>
+               <input type="date" name="deadline">
+
+               <!-- Contact Email Display -->
+               <p class="contact-email">Or contact us directly: <strong>info@mystixstudios.co.za</strong></p>
+
+               <!-- Terms -->
+               <div class="terms-box">
+                  <h3>Terms & Conditions</h3>
+                  <div class="terms-content">
+                       <p>
+                         By proceeding, you acknowledge and agree to the following terms:
+
+                         • Project initiation may require up to a 2-week preparation period depending on scope and resource allocation.  
+                         • Standard projects operate with streamlined teams, while complex or high-end productions require larger, specialized teams.  
+                         • Quotations are finalized after internal assessment of required roles, hourly rates, and estimated project timelines.  
+
+                         • A 70% deposit is required before work begins. The remaining 30% is due upon project completion prior to final delivery.  
+                         • Any additional requests outside the agreed scope will incur additional costs. Work may pause until adjustments are approved.  
+
+                         • Clients will communicate directly with a designated Project Manager.  
+                         • Regular updates or scheduled meetings may be arranged to ensure transparency and progress tracking.  
+                         • These updates are optional and designed to provide assurance, while the team remains focused on delivery timelines.  
+
+                         • Final review will be conducted via an online meeting before final payment.  
+                         • Upon full payment, final deliverables (HD/4K) will be transferred and ownership is handed over to the client.  
+
+                         • Larger-scale productions (e.g. films, games, series) may span months or years and may be structured with milestone or monthly payments.  
+
+                         • While we prioritize timely delivery, minor delays (typically 1–3 weeks) may occur due to revisions, rendering processes, or technical adjustments.  
+
+                         • Mystix Studios maintains commitment to quality, professionalism, and project completion.  
+                      </p>
+                  </div>
+
+                  <label class="checkbox">
+                     <input type="checkbox" required>
+                      I agree to the Terms & Conditions
+                  </label>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit">Submit Project Request</button>
+
+            </form>
+
         </section>
-        <!-- Add more sections as needed -->
+        
     </main>
 
     <footer>

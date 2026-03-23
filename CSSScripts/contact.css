@@ -1,0 +1,80 @@
+#contact-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #0f0f24;
+    border-radius: 8px;
+    color: #E3E9F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact-section h1 {
+    text-align: center;
+    color: #00D2FF;
+    margin-bottom: 10px;
+}
+
+#contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    background: #00D2FF;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00aacc;
+}
+
+/* Terms Box */
+.terms-box {
+    background: #1a1a3a;
+    padding: 15px;
+    border-radius: 6px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.terms-content {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.checkbox {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contact-email {
+    font-size: 14px;
+    text-align: center;
+}
