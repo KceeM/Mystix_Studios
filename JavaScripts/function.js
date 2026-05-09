@@ -2,7 +2,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setupNavigationButtons();
     highlightActiveButton();
-    filterSelection();
+    filterSelection("all");
+
+    const modal = document.getElementById("videoModal");
+    const youtubePlayer = document.getElementById("youtubePlayer");
+    const modalVideo = document.getElementById("modalVideo");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".portfolio-item").forEach(item => {
+      item.addEventListener("click", function() {
+          const type = this.getAttribute("data-type");
+          const videoSrc = this.getAttribute("data-video");
+
+          if (!videoSrc) return;
+
+          modal.style.display = "flex";
+
+          if (type === "youtube") {
+             youtubePlayer.style.display = "block";
+             modalVideo.style.display = "none";
+
+             youtubePlayer.src = `https://www.youtube.com/embed/${videoSrc}?autoplay=1&mute=1`;
+
+            } else {
+                youtubePlayer.style.display = "none";
+                modalVideo.style.display = "block";
+
+                modalVideo.src = videoSrc;
+                modalVideo.play();
+            }
+       });
+   });
+
+    closeBtn.addEventListener("click", function() {
+      modal.style.display = "none";
+      youtubePlayer.src = "";
+      modalVideo.pause();
+      modalVideo.src = ""; // clears video
+   });
 
 
 });
@@ -61,3 +98,5 @@ function filterSelection(category) {
         }
     });
 }
+
+
