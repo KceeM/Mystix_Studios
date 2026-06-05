@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', checkVisibility);
 });
 
-function redirectToService(category) {
-    // Redirect to the services page with the specified category section
-    window.location.href = 'Services.html#' + category;
+function redirectToService(service) {
+    window.location.href = `services.html#service-${service}`;
 }

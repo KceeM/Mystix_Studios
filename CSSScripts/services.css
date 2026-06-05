@@ -138,6 +138,60 @@
     transform: scale(1.08);
 } 
 
+.service-cta {
+    margin-top: 20px;
+    padding: 14px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #00D2FF,
+        #00FFF3
+    );
+
+    color: #0A0A1F;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 0 15px rgba(0, 210, 255, 0.35);
+
+    text-transform: uppercase;
+}
+
+.service-cta:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(0, 210, 255, 0.7);
+
+    background: linear-gradient(
+        135deg,
+        #00FFF3,
+        #00D2FF
+    );
+}
+
+.service-cta:active {
+    transform: translateY(0);
+}
+
+.service-cta::after {
+    content: " →";
+    transition: 0.3s ease;
+}
+
+.service-cta:hover::after {
+    margin-left: 6px;
+}
+
 @media (max-width: 768px) {
     .service {
         flex-direction: column;
