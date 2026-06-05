@@ -115,14 +115,113 @@ main {
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
+#main-footer {
+    background: #050510;
+    border-top: 1px solid rgba(0, 210, 255, 0.15);
+    padding: 60px 20px;
     text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    bottom: 0;
-    
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #00D2FF;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+}
+
+.footer-tagline {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer-services {
+    color: #C8D8F5;
+    opacity: 0.85;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-location {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    background: rgba(0, 210, 255, 0.08);
+    color: #00D2FF;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.footer-email {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    margin-bottom: 40px;
+}
+
+.footer-links a {
+    color: #00D2FF;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-cta {
+    background: rgba(15, 20, 40, 0.7);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.footer-cta h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-cta p {
+    color: #C8D8F5;
+    margin-bottom: 20px;
+}
+
+.footer-cta button {
+    background: #00D2FF;
+    color: #0A0A1F;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-cta button:hover {
+    background: #00A8CC;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    color: #C8D8F5;
+    opacity: 0.7;
+    font-size: 0.9rem;
 }
 
 html {

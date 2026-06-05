@@ -28,8 +28,11 @@ section h2 {
     max-width: 40%; /* Adjust the width of the mission section */
     text-align: left; /* Align text to the left */
     padding: 20px;
-    background-color: white; /* Optional: background color */
-    border-radius: 6px; /* Optional: rounded corners for the section */
+    background: rgba(15, 20, 40, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,210,255,.2);
+    border-radius: 12px;
+    color: #C8D8F5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for effect */
 }
 
@@ -48,7 +51,7 @@ section h2 {
 #specialities {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f5f5f5; /* Light background */
+    background: transparent;
 }
 
 .speciality-container {
@@ -78,8 +81,8 @@ section h2 {
     margin-top: 10px;
     padding: 10px 15px;
     border: none;
-    background-color: #6a5acd; /* Soft purple */
-    color: white;
+    background: #00D2FF;
+    color: #0A0A1F;
     font-size: 16px;
     font-weight: bold;
     border-radius: 6px;
@@ -97,7 +100,7 @@ section h2 {
 }
 
 .speciality-item button:hover {
-    background-color: #483d8b; /* Darker shade on hover */
+    background: #00A8CC;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
@@ -218,9 +221,9 @@ section h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     margin-top: 20px;
-    color: #f5d300;
+    color: #7b7b7b;
     letter-spacing: 1.2px;
-    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 8px rgba(12, 12, 12, 0.5);
 }
 
 /* Paragraph */
@@ -277,4 +280,20 @@ section h2 {
 @keyframes glowEffect {
     from { opacity: 0.3; transform: scale(1.1); }
     to { opacity: 0.6; transform: scale(1); }
+}
+
+.location-badge {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+
+    border: 1px solid rgba(0,210,255,.3);
+
+    background: rgba(0,210,255,.08);
+
+    color: #00D2FF;
+
+    border-radius: 30px;
+
+    font-size: .9rem;
 }
