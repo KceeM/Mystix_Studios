@@ -42,9 +42,19 @@
               <!-- Email -->
               <input type="email" name="email" placeholder="Email Address" required>
 
+              <label for="client-type">Project Type</label>
+
+              <select name="client-type" id="client-type">
+                  <option>Personal Project</option>
+                  <option>Startup</option>
+                  <option>Small Business</option>
+                  <option>Corporate</option>
+                  <option>Agency</option>
+               </select>
+
               <!-- Project Type -->
-              <label for="project-type">Select Project Type</label>
-              <select name="project-type" id="project-type" required>
+               <label for="project-type">Select Project Type</label>
+               <select name="project-type" id="project-type" required>
                   <option value="">-- Select a Service --</option>
                   <option>Social Media Content</option>
                   <option>Brand Marketing Visuals</option>
@@ -69,7 +79,7 @@
                   <option>Photography Editing</option>
                   <option>Graphic Design</option>
                   <option>Traditional Art (Paintings)</option>
-               </select>
+                </select>
 
                <!-- Project Description -->
                <textarea name="description" placeholder="Describe your project in detail (concept, goals, references, expectations)" required></textarea>
@@ -77,6 +87,14 @@
                <!-- Deadline -->
                <label>Preferred Deadline</label>
                <input type="date" name="deadline">
+
+               <label for="assets">Do you already have assets?</label>
+
+               <select name="assets" id="assets">
+                  <option>No, create everything from scratch</option>
+                  <option>Some assets available</option>
+                  <option>All assets available</option>
+               </select>
 
                <label for="budget">Estimated Budget</label>
 
@@ -94,6 +112,21 @@
                     <option>R50,000+</option>
 
                 </select>
+
+
+                <label for="referral">How did you hear about us?</label>
+
+                <select name="referral" id="referral">
+                    <option>Google Search</option>
+                    <option>Instagram</option>
+                    <option>Facebook</option>
+                    <option>LinkedIn</option>
+                    <option>Referral</option>
+                    <option>YouTube</option>
+                    <option>Other</option>
+                </select>
+
+                <p>Most enquiries receive a response within 1–3 business days.</p>
 
                <!-- Contact Email Display -->
                <p class="contact-email">Or contact us directly: <strong>studiosmystix@gmail.com</strong></p>
